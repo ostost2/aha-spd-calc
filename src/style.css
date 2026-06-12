@@ -37,6 +37,7 @@
 
 #label {
   font-weight: bold;
+  text-align: right;
 }
 
 input {
