@@ -28,7 +28,7 @@ const speed = computed(() => {
         <div v-for="(entry, index) in list">
           <input class="field" type="number" :value="entry.spd" :style="{color: entry.color}"
             @input="e => list[index].spd = Number.parseFloat((e.target as HTMLInputElement)?.value)">
-          <input class="delete" v-if="index > 0" type="button" value="×" @click="list.splice(index, 1)">
+          <input class="delete" v-if="list.length > 1" type="button" value="×" @click="list.splice(index, 1)">
         </div>
         <div v-if="list.length < 4"><input class="field" type="button" value="+" @click="_ => list.push({spd: 100, color: randomHsl()})"></div>
       </div>
