@@ -23,7 +23,7 @@ const speed = computed(() => {
     <h1 class="title">Aha's speed</h1>
     <div id="display">{{ speed }}</div>
     <div id="inputs">
-      <p id="label">Elation teammate's<br>speed values:</p>
+      <p id="label">Elation units'<br>speed values:</p>
       <div>
         <div v-for="(entry, index) in list">
           <input class="field" type="number" :value="entry.spd" :style="{color: entry.color}"
