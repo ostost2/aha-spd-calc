@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, reactive, ref } from 'vue'
+import { computed, reactive } from 'vue'
 
 const randomHsl = () => `hsla(${Math.random() * 360}, 80%, 50%, 1)`
 
