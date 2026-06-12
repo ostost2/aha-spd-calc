@@ -35,6 +35,6 @@ const speed = computed(() => {
     </div>
 
     <p>Add your roster's speed values in any order</p>
-    <p>80<template v-for="(entry, index) in sorted"> + <span :style="{color: entry.color}">{{ entry.spd }}</span> / {{ 5 * 2 ** index }}</template> = <b>{{ speed }}</b></p>
+    <p>80<template v-for="(entry, index) in sorted"> + <span :style="{color: entry.color}">{{ isNaN(entry.spd) ? "?" : entry.spd }}</span> / {{ 5 * 2 ** index }}</template> = <b>{{ speed }}</b></p>
   </section>
 </template>
