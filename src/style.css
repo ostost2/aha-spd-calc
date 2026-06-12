@@ -1,0 +1,54 @@
+@import 'modern-normalize';
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+.field {
+  width: 8rem;
+  margin: 0.2rem;
+}
+
+.delete {
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#display {
+  text-align: center;
+  padding: 1rem;
+  padding-top: 4rem;
+  font-size: 64px;
+}
+
+input {
+  background-color: white;
+  vertical-align: middle;
+  height: 2rem;
+  /* box-shadow: inset 1px 1px 3px #cccccc; */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  padding: 8px;
+}
